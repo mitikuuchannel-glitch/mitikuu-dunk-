@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mitikuu Dunk</title>
 
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#73c8ff, #e8f7ff);
+  touch-action: none;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.box {
+  background: rgba(0,0,0,.65);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#basket {
+  position: absolute;
+  right: 12%;
+  top: 30%;
+  width: 100px;
+  height: 70px;
+}
+
+#rim {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100px;
+  height: 12px;
+  background: #ff5b22;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 #b9360e;
+}
+
+#backboard {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 12px;
+  height: 65px;
+  background: white;
+  border: 3px solid #555;
+  border-radius: 3px;
+}
+
+#net {
+  position: absolute;
+  left: 20px;
+  top: 38px;
+  width: 60px;
+  height: 35px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 0 0 30px 30px;
+}
+
+#ball {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f
